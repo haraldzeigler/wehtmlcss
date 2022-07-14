@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang = "no">
+<head>
+    <title>LÆR_CSS</title>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+          color: blue;
+          font-family: verdana;
+          font-size: 300%;
+          padding: 1%;
+          border-style: solid;
+          border-width: 5px;
+          border-color: black;
+
+
+        }
+        p {
+          color: red;
+          font-family: courier;
+          font-size: 160%;
+          padding: 2%;
+          border-left: solid;
+          border-width: 5px;
+          border-color: blue;
+          /*border-radius: 10px;
+          border-color: black;
+          */
+        }
+
+        level1 {
+            /*Margin*/
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 10px;
+            border-width: 0px;
+            padding: 0px;
+            width: 80%;
+            height: 20%;
+            background-color: grey;
+            display: block;
+
+
+        }
+        level2 {
+            /*Border*/
+            margin: 10px;
+            border-width: 20px;
+            border-color: red;
+            border-style: solid;
+            font-size: 20px;
+            color: black;
+            width: 400px;
+            height: 300px;
+            background-color: lightgray;
+            display: block;
+
+        }
+        level3 {
+            /*Padding*/
+            margin: 10px;
+            border-width: 20px;
+            border-color: green;
+            border-style: solid;
+            font-size: 20px;
+            color: black;
+            padding: 30px;
+            width: 200px;
+            background-color: darkgray;
+            display: block;
+
+        }
+        level4 {
+            /*Content*/
+            margin: 10px;
+            border-width: 20px;
+            border-color: blue;
+            border-style: solid;
+            font-size: 40px;
+            color: black;
+            padding: 30px;
+            width: 600px;
+            height: 200px;
+            background-color: darkgray;   
+            display: block;     
+
+
+
+        }
+        </style>
+</head>
+<body>
+<h1>
+    <!-- Tester noen avsnitt med disse stilene -->
+    CSS kan få siden til å se bedre ut
+</h1>
+<p>Her er det for eksempel lagt inn border-left på alle &lt;p> avsnittene og fullstendig kant (border) på alle &lt;h1> avsnittene</p>
+<br>
+<p>Med ett linjeskift før neste avsnitt ser det relativt bra ut. La oss utforske boks-modellen i CSS litt. Og la oss alltid ha lange setninger som tar flere linjer med tekst. Det er slik at ytre boks er Margin, deretter Border, så Padding og til slutt content</p>
+<level1>
+    LEVEL 1:
+</level1>
+<level1>Margin er det ytterste laget, og lager en avstand fra kanten. Det er enklere å se hvis setningene er veldig lange, men la oss dra opp skriftstørrelsen litt heller. men ops, hva skjer når ordene går utover sidebredden? Level1, 2, 3 og 4 har margin 10px<br>
+    <pre>           
+        /*Margin*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 10px;
+        border-width: 0px;
+        padding: 0px;
+        width: 80%;
+        height: 20%;
+        background-color: grey;
+        display: block;</pre>
+</level1>
+<level2>
+    LEVEL 2:
+</level2>
+<level2>
+<pre>
+    /*Border*/
+    margin: 10px;
+    border-width: 20px;
+    border-color: red;
+    border-style: solid;
+    font-size: 20px;
+    color: black;
+    width: 400px;
+    height: 300px;
+    background-color: lightgray;
+    display: block;
+</pre>
+</level2>
+
+<level3>
+LEVEL 3:<br>
+
+<pre>
+    /*Padding*/
+    margin: 10px;
+    border-width: 20px;
+    border-color: green;
+    border-style: solid;
+    font-size: 20px;
+    color: black;
+    padding: 30px;
+    width: 200px;
+    background-color: darkgray;
+    display: block;   
+</pre>
+</level3>
+
+<level1>LEVEL 1<br>
+    <level2>LEVEL 2&lt;1<br>
+        <level3>LEVEL 3&lt;2&lt;1<br></level3>
+    </level2>
+</level1>
+
+<level3>
+    LEVEL 3<br>
+    <level2>LEVEL 2&lt;3<br>
+        <level1>LEVEL 1&lt;2&lt;3<br></level1>
+    </level2>
+</level3>
+
+<level1>
+    <level2>
+        <level3>
+            Dette er tekst som fremkommer som level3 inni level2 inni level1
+        </level3>
+    </level2>
+</level1>
+
+<level3>
+    <level2>
+        <level1>
+            Dette er leve1 inni level2 inni level3
+        </level1>
+    </level2>
+</level3>
+
+<level3>
+    Dette er vanlig level 3 tekst
+</level3>
+
+<level2>
+    Dette er vanlig level 2 tekst
+</level2>
+
+<level1>
+    Dette er vanlig level 1 tekst
+</level1>
+<level4>
+    Level4:<br>
+    Level4 har ikke noe annet enn level3 egentlig, men med blå kanter<br>
+    Vi ser at linjeskift er et reint helvete
+    <br>
+
+
+</level4>
+
+</body>
+</body>
+</html>
+
